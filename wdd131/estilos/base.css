@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-    --primary-color: #0d3b66;
-    --secondary-color: #1d70a2;
-    --accent-color: #f4a261;
-    --background-color: #f4f4f4;
-    --text-color: #333;
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #a8dadc;
+    --background-color: #f1f5f9;
+    --white: #ffffff;
+    --text-color: #333333;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -21,50 +23,49 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* HEADER */
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
 }
 
 #titulo-curso {
     display: block;
     text-align: center;
-    padding: 1.5rem;
-    font-size: 1.7rem;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1rem;
 }
-
-/* Navegação */
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #072540;
+    background-color: #111827;
 }
 
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     padding: 1rem;
-    transition: 0.3s;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
 }
 
 nav a:hover {
     background-color: var(--accent-color);
-    color: black;
-    border-radius: 4px;
+    color: #000;
 }
 
-/* Main */
+/* MAIN */
 
 main {
     max-width: 1100px;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 0 1rem;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -78,47 +79,90 @@ main h1 {
     margin-bottom: 1rem;
 }
 
-/* Cards */
+/* CARDS */
 
 .card {
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow);
 }
 
 .card h2 {
     background-color: var(--secondary-color);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.8rem;
 }
 
-.card img {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    margin: 1rem auto;
+/* PRIMEIRO CARD */
+
+.card-content {
+    padding: 1.2rem;
+
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
 }
 
-.card p {
-    padding: 1rem;
+.card-content img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
 }
 
-/* Footer */
+.text-content {
+    flex: 1;
+}
+
+/* SEGUNDO CARD */
+
+.location-content {
+    padding: 1.2rem;
+}
+
+.location-content figure {
+    float: left;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.location-content img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.location-content figcaption {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+.location-content p {
+    text-align: justify;
+}
+
+/* FOOTER */
 
 footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 1.5rem;
+    margin-top: 2rem;
 }
 
-footer p {
-    margin: 0.5rem 0;
+footer p:first-child {
+    margin-bottom: 0.5rem;
 }
 
-/* Responsivo */
+#ultimaModificacao {
+    color: #ffd166;
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
 
@@ -126,11 +170,26 @@ footer p {
         flex-direction: column;
     }
 
+    nav a {
+        width: 100%;
+    }
+
     main {
         grid-template-columns: 1fr;
     }
 
-    #titulo-curso {
-        font-size: 1.3rem;
+    .card-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-content img {
+        width: 220px;
+    }
+
+    .location-content figure {
+        float: none;
+        margin: 0 auto 1rem;
     }
 }

@@ -1,10 +1,6 @@
-// Ano atual
+const currentYear = new Date().getFullYear();
 
-const anoAtual = new Date().getFullYear();
+document.getElementById("currentyear").textContent = currentYear;
 
-document.querySelector("#anoatual").textContent = anoAtual;
-
-// Última modificação da página
-
-document.querySelector("#ultimaModificacao").textContent =
-    `Última Modificação: ${document.lastModified}`;
+document.getElementById("ultimaModificacao").textContent =
+`Última Modificação: ${document.lastModified}`;
