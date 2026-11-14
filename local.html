@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página sobre Balneário Camboriú (Lugar que quero conhecer) atividade WDD 131.">
     <meta name="author" content="Dylan Adonai">
+
     <title>Balneario Camboriu | WDD 131</title>
 
     <link rel="stylesheet" href="estilos/local1.css">
@@ -12,19 +13,21 @@
 </head>
 
 <body>
+
     <header>
         <h1>Balneário Camboriú</h1>
     </header>
 
     <main>
+
         <section class="hero">
             <picture>
                 <source
                     media="(min-width: 800px)"
-                    src="imagens/balneario2.svg">
+                    srcset="imagens/balneario2.webp">
 
                 <img
-                    src="imagens/balneario-camboriu.webp.webp"
+                    src="imagens/balneario-camboriu.webp"
                     alt="Vista aérea de Balneário Camboriú"
                     width="1200"
                     height="600">
@@ -35,16 +38,16 @@
             <h2>Sobre o Local</h2>
 
             <p>
-                Balneario Camboriu é um dos destinos turísticos mais famosos
-                do Brasil. Localizada no litoral norte de Santa Catarina,
-                a cidade é conhecida por suas praias, edifícios modernos
-                e diversas atrações turísticas.
+                Balneário Camboriú é um dos destinos turísticos mais famosos do
+                Brasil. Localizada no litoral norte do estado de Santa Catarina,
+                a cidade é conhecida por suas praias, arranha-céus e atrações
+                modernas.
             </p>
 
             <p>
-                Tenho vontade de conhecer Balneário Camboriú por causa das
-                belas paisagens, da infraestrutura urbana, dos passeios de
-                teleférico e das opções de lazer para moradores e visitantes.
+                Tenho vontade de conhecer Balneário Camboriú por causa das belas
+                paisagens, da infraestrutura urbana, do teleférico do Parque
+                Unipraias e das diversas opções de lazer e entretenimento.
             </p>
 
             <p><strong>Estado:</strong> Santa Catarina</p>
@@ -57,27 +60,49 @@
         <section class="card weather">
             <h2>Clima</h2>
 
-            <img
-                src="imagens/balneario1.webp"
-                alt="Ícone do clima"
-                class="weather-icon">
+            <svg
+                class="weather-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+                aria-label="Ícone do clima">
+
+                <circle
+                    cx="35"
+                    cy="35"
+                    r="18"
+                    fill="#FFD700">
+                </circle>
+
+                <ellipse
+                    cx="60"
+                    cy="55"
+                    rx="25"
+                    ry="15"
+                    fill="#D3D3D3">
+                </ellipse>
+
+            </svg>
 
             <p><strong>Temperatura:</strong> 8°C</p>
             <p><strong>Condições:</strong> Parcialmente Nublado</p>
             <p><strong>Velocidade do Vento:</strong> 12 km/h</p>
+
             <p>
                 <strong>Sensação Térmica:</strong>
                 <span id="windchill"></span>
             </p>
         </section>
+
     </main>
 
     <footer>
         <p>
-            &copy; <span id="currentyear"></span> | Balneário Camboriú, Santa Catarina
+            &copy; <span id="currentyear"></span>
+            | Balneário Camboriú, Santa Catarina
         </p>
 
         <p id="lastModified"></p>
     </footer>
+
 </body>
 </html>
