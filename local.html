@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre Balneário Camboriú (Lugar que quero conhecer) atividade WDD 131.">
+    <meta name="author" content="Dylan Adonai">
+    <title>Balneario Camboriu | WDD 131</title>
+
+    <link rel="stylesheet" href="estilos/local1.css">
+    <script src="scripts/local2.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Balneário Camboriú</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source
+                    media="(min-width: 800px)"
+                    src="imagens/balneario2.jpg">
+
+                <img
+                    src="imagens/balneario camboriu.jpg"
+                    alt="Vista aérea de Balneário Camboriú"
+                    width="1200"
+                    height="600">
+            </picture>
+        </section>
+
+        <section class="card data">
+            <h2>Sobre o Local</h2>
+
+            <p>
+                Balneario Camboriu é um dos destinos turísticos mais famosos
+                do Brasil. Localizada no litoral norte de Santa Catarina,
+                a cidade é conhecida por suas praias, edifícios modernos
+                e diversas atrações turísticas.
+            </p>
+
+            <p>
+                Tenho vontade de conhecer Balneário Camboriú por causa das
+                belas paisagens, da infraestrutura urbana, dos passeios de
+                teleférico e das opções de lazer para moradores e visitantes.
+            </p>
+
+            <p><strong>Estado:</strong> Santa Catarina</p>
+            <p><strong>País:</strong> Brasil</p>
+            <p><strong>Idioma:</strong> Português</p>
+            <p><strong>Moeda:</strong> Real Brasileiro (BRL)</p>
+            <p><strong>Atrações:</strong> Praia Central, Cristo Luz, Parque Unipraias e Molhe da Barra Sul</p>
+        </section>
+
+        <section class="card weather">
+            <h2>Clima</h2>
+
+            <img
+                src="imagens/balneario1.jpg"
+                alt="Ícone do clima"
+                class="weather-icon">
+
+            <p><strong>Temperatura:</strong> 8°C</p>
+            <p><strong>Condições:</strong> Parcialmente Nublado</p>
+            <p><strong>Velocidade do Vento:</strong> 12 km/h</p>
+            <p>
+                <strong>Sensação Térmica:</strong>
+                <span id="windchill"></span>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Balneário Camboriú, Santa Catarina
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
