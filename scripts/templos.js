@@ -1,4 +1,4 @@
-const temples = [
+const temples = 
 {
     templeName: "Aba Nigeria",
     location: "Aba, Nigéria",
@@ -48,25 +48,5 @@ const temples = [
     area: 116642,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 },
-{
-    templeName: "Rio de Janeiro Brasil",
-    location: "Rio de Janeiro, Brasil",
-    dedicated: "2022, 8 de maio",
-    area: 29966,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rio-de-janeiro-brazil-temple/rio-de-janeiro-brazil-temple-55708-main.jpg"
-},
-{
-    templeName: "Recife Brasil",
-    location: "Recife, Brasil",
-    dedicated: "2000, 15 de dezembro",
-    area: 37000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-2744-main.jpg"
-},
-{
-    templeName: "São Paulo Brasil",
-    location: "São Paulo, Brasil",
-    dedicated: "1978, 30 de outubro",
-    area: 59246,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/sao-paulo-brazil-temple/sao-paulo-brazil-temple-1871-main.jpg"
-}
-];
+
+
