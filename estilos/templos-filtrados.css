@@ -1,70 +1,125 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
+
 header {
-    background: #003366;
+    background-color: #003366;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
-nav {
-    margin-top: 1rem;
+header h1 {
+    margin-bottom: 1rem;
 }
 
-nav button {
-    padding: .7rem 1rem;
-    margin: .2rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #00509d;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #001f4d;
+    transform: scale(1.05);
+}
+
 
 main {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 1rem;
 }
 
-h2 {
+main h2 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
+
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
 }
+
 
 .gallery section {
     background: white;
+    border-radius: 10px;
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,.15);
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+.gallery h3 {
+    color: #003366;
+    margin-bottom: 0.5rem;
+}
+
+.gallery p {
+    margin-bottom: 0.5rem;
+}
+
 
 .gallery img {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    margin-top: 1rem;
-    border-radius: 6px;
+    border-radius: 8px;
+    margin-top: 0.75rem;
 }
 
+
 footer {
-    text-align: center;
-    background: #003366;
-    color: white;
-    padding: 1rem;
     margin-top: 2rem;
-}   
+    padding: 1rem;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 200px;
+        text-align: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
